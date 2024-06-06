@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div class="container">
+        <button id="home" onclick="home_screen()">🏠︎</button>
+       </div>
+    <h1 id="h1">question 6!!</h1>
+    <h3>Spinal cord is a part of _____ system</h3>
+    <button class="ans" onclick="wrong()">Circulatory system</button>
+    <button class="ans" onclick="wrong()">Digestive system</button>
+    <button class="ans" onclick="wrong()">Excretory system</button>
+    <button class="ans" onclick="right()">Nervous system</button>
+    <h4>Choose any one option among them</h4>
+    <h3 id="p"></h3>
+    <button id="nxt" onclick="nextscreen()">Go to Next screen</button>
+    <script>
+        var score = 0;
+        function wrong()
+        {
+           document.getElementById("p").innerHTML = ("Oops!! your Answer is wrong!!!The correct answer is option 4");
+        }
+        
+        function right() 
+        {
+            score = score + 6;
+            console.log(score);
+            document.getElementById("p").innerHTML = ("Yayy!! your Answer is correct!!!");
+        }
+        function nextscreen()
+        {
+            window.location = "7maingame.html";
+        }
+        function home_screen()
+        {
+            window.location = "task.html";
+        }
+    </script>
+    <style>
+         #body {
+            background-color: aquamarine;
+            text-align: center;
+        }
+        #h1 {
+            color: rgb(255, 0, 0);
+        }
+        .ans {
+            color: rgb(255, 10, 10);
+            background-color: rgb(248, 244, 19);
+        }
+        #nxt {
+            color: rgb(248, 10, 10);
+            background-color: rgb(252, 252, 10);
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</body>
+</html>

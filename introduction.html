@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1 id="h1">Introduction</h1>
+   <div class="container">
+    <button id="home" onclick="home_screen()">🏠︎</button>
+   </div>
+    <h2 id="name">Chinmay Chirayu Mishra</h2>
+    <br>
+    <h3 id="h4">Hello everyone I am Chinmay Chirayu Mishra, I study in grade 5-Red and today I am going to tell you about the topic in the body systems that I always wanted to know</h4>
+        <h3 id="lbl">Press the button given below to go through my inquiry</h3>
+        <button id="stinquiry" onclick="goinquiry()">My inquiry</button>
+        <script>
+            function goinquiry()
+            {
+                window.location = "inquiry.html";
+            }
+            function home_screen()
+            {
+                window.location = "task.html";
+            }
+        </script>
+    <style>
+        #body {
+            background-color: #7be9d1;
+            text-align: center;
+            font-family: georgina;
+            border-style: ridge;
+            border-width: 6px;
+            border-color: #c74a89;
+        }
+        #h1 {
+            color: #1a0222;
+        }
+        #name {
+            color: #d3530a;
+        }
+        #h4 {
+            color: #021c64;
+        }
+        #lbl {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: normal;
+        }
+        #stinquiry {
+            width: 100px;
+            height: 5px;
+            padding-bottom: 20px;
+            background-color: #ecf016;
+            color: #e42a2a;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</body>
+</html>

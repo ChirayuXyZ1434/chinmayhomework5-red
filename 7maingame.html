@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div class="container">
+        <button id="home" onclick="home_screen()">🏠︎</button>
+       </div>
+    <h1 id="h1">question 7!!</h1>
+    <h3>Read the statements carefully and choose the correct option. A: Adult human body has over 500 bones. B: Adult human body has 32 teeth.</h3>
+    <button class="ans" onclick="wrong()"> Only statement A is true.</button>
+    <button class="ans" onclick="right()">Only statement B is true.</button>
+    <button class="ans" onclick="wrong()">Both A and B are true.</button>
+    <button class="ans" onclick="wrong()">Both A and B are false.</button>
+    <h4>Choose any one option among them</h4>
+    <h3 id="p"></h3>
+    <h2 id="h2"></h2>
+    <script>
+        var score = 0;
+        function wrong()
+        {
+           document.getElementById("p").innerHTML = ("Oops!! your Answer is wrong!!!The correct answer is option 2");
+           document.getElementById("h2").innerHTML = ("Thankyou for giving your most precious time and seeing my website");
+
+        }
+        
+        function right() 
+        {
+            score = score + 7;
+            console.log(score);
+            document.getElementById("p").innerHTML = ("Yayy!! your Answer is correct!!!");
+            document.getElementById("h2").innerHTML = ("Thankyou for giving your most precious time and seeing my website");
+        }
+        function home_screen()
+        {
+            window.location = "task.html";
+        }
+    </script>
+    <style>
+         #body {
+            background-color: aquamarine;
+            text-align: center;
+        }
+        #h1 {
+            color: rgb(255, 0, 0);
+        }
+        .ans {
+            color: rgb(255, 10, 10);
+            background-color: rgb(248, 244, 19);
+        }
+        #nxt {
+            color: rgb(248, 10, 10);
+            background-color: rgb(252, 252, 10);
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</body>
+</html>

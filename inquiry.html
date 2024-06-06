@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1 id="h1">HOW DOES THE VALVE IN OUR HEART WORK: </h1>
+    <div class="container">
+        <button id="home" onclick="home_screen()">🏠︎</button>
+       </div>
+    <br>
+    <h2 id="h3">Reflect why it interests you</h2>
+<h4 id="reason">The reason why this topic interests me is that my father also had a Valve replacement operation two years ago, thus I want to know why is this organ important for heart and our body, also what are the functions of Valves.</h4>
+<button id="know" onclick="next()">Knowledge about it</button>
+<script>
+    function next() 
+    {
+        window.location = "knowledge.html";
+    }
+    function home_screen() 
+    {
+        window.location = "task.html";
+    }
+</script>
+<style>
+    #body {
+        background-color: #bb6169;
+            text-align: center;
+            font-family: georgina;
+            border-style: ridge;
+            border-width: 6px;
+            border-color: #e4e015;
+    }
+    #h3 {
+         color: rgba(0, 0, 0, 0.993);      
+    }
+    #h1 {
+        color: #db1526;
+    }
+    #reason {
+        font-size: 18px;
+        font-family: cursive;
+    }
+    #know {
+        width: 100px;
+            height: 38px;
+            background-color: #ecf016;
+            color: #e42a2a;
+            padding-bottom: 30px;
+    }
+    .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+</style>
+</body>
+</html>

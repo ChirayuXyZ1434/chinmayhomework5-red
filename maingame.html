@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div class="container">
+        <button id="home" onclick="home_screen()">🏠︎</button>
+       </div>
+    <h1 id="h1">Welcome to the Trivia game about body systems!!</h1>
+    <h3>how many chambers does the heart have ?</h3>
+    <button class="ans" onclick="wrong()">6</button>
+    <button class="ans" onclick="right()">4</button>
+    <button class="ans" onclick="wrong()">2</button>
+    <button class="ans" onclick="wrong()">10</button>
+    <h4>Choose any one option among them</h4>
+    <p id="p"></p>
+    <button id="nxt" onclick="nextscreen()">Go to Next screen</button>
+    <script>
+        function wrong()
+        {
+           document.getElementById("p").innerHTML = ("Oops!! your Answer is wrong!!!The correct answer is option 2");
+        }
+        var score = 0;
+        function right() 
+        {
+            score = score + 1;
+            console.log(score);
+            document.getElementById("p").innerHTML = ("Yayy!! your Answer is correct!!!");
+        }
+        function nextscreen()
+        {
+            window.location = "2maingame.html";
+        }
+        function home_screen()
+        {
+            window.location = "task.html";
+        }
+    </script>
+    <style>
+        #body {
+            background-color: aquamarine;
+            text-align: center;
+        }
+        #h1 {
+            color: rgb(255, 0, 0);
+        }
+        .ans {
+            color: rgb(255, 10, 10);
+            background-color: rgb(248, 244, 19);
+        }
+        #nxt {
+            color: rgb(248, 10, 10);
+            background-color: rgb(252, 252, 10);
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</body>
+</html>
